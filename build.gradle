@@ -32,7 +32,7 @@ allprojects {
 sonarqube {
     properties {
         property "sonar.projectName", "SelecTunes-Frontend"
-        property "sonar.projectKey", "cs309.selectunes"
+        property "sonar.projectKey", "SelecTunes_SelecTunes-Frontend"
         property "sonar.links.homepage", "https://github.com/SelecTunes/SelecTunes-Frontend"
         property "sonar.links.ci", "https://travis-ci.org/github/SelecTunes/SelecTunes-Frontend"
         property "sonar.links.scm", "https://github.com/SelecTunes/SelecTunes-Frontend"
