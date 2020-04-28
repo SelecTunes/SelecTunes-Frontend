@@ -1,6 +1,8 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply plugin: 'org.sonarqube'
 
 buildscript {
+
     ext.kotlin_version = '1.3.50'
     ext.dokkaVersion = '0.9.17'
 
@@ -13,6 +15,7 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.6.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:$dokkaVersion"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.6.1"
     }
 }
 
@@ -20,6 +23,20 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectName", "SelecTunes-Frontend"
+        property "sonar.projectKey", "cs309.selectunes"
+        property "sonar.links.homepage", "https://github.com/SelecTunes/SelecTunes-Frontend"
+        property "sonar.links.ci", "https://travis-ci.org/github/SelecTunes/SelecTunes-Frontend"
+        property "sonar.links.scm", "https://github.com/SelecTunes/SelecTunes-Frontend"
+        property "sonar.links.issue", "https://github.com/SelecTunes/SelecTunes-Frontend/issues"
     }
 }
 
