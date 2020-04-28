@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/github/SelecTunes/SelecTunes-Frontend.svg?branch=master)](https://travis-ci.org/github/SelecTunes/SelecTunes-Frontend)
+[![Build Status](https://api.travis-ci.org/SelecTunes/SelecTunes-Frontend.svg?branch=master)](https://travis-ci.org/github/SelecTunes/SelecTunes-Frontend)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SelecTunes_SelecTunes-Frontend&metric=alert_status)](https://sonarcloud.io/dashboard?id=SelecTunes_SelecTunes-Frontend)
 [![License: MIT](https://img.shields.io/badge/license-Apache%202.0-blue)](https://git.linux.iastate.edu/cs309/spring-2020/JR_2/blob/master/LICENSE)
 # SelecTunes 309 Project
